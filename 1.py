@@ -2,14 +2,14 @@
 # and returns a new list with all its element's values doubled.
 # It should raise an error if the parameter is not a list.
 
-def list_data_doubler(data_list):
-    if isinstance(data_list,list):
-        reference_list = []
-        for i in data_list:
-            reference_list.append(i*2)
-        return reference_list
+def list_item_value_doubler(param_list):
+    if isinstance(param_list, list):
+        returned_list = []
+        for i in range(len(param_list)):
+            returned_list.append(param_list[i]*2)
+        return returned_list
     else:
-        raise TypeError("Please give me a list for parameter!")
-
-lista = [1,2,3,4]
-print(list_data_doubler(lista))
+        raise ValueError("Please feed me with list")
+test = [1,2,3,4]
+testt = 1
+print(list_item_value_doubler(testt))

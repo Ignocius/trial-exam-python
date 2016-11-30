@@ -2,17 +2,18 @@
 # and counts the occurances of the letter "a", and returns it as a number.
 # It should not break if the file does not exist, just return 0.
 
-def letter_counter_from_file(file_name):
+def letterA_counter_from_file(file_name):
     try:
-        f = open(file_name, "r")
-        read = f.readlines()
+        f = open(file_name)
+        readall = f.readlines()
         a_counter = 0
-        for line in range(len(read)):
-            for word in read[line]:
-                if word == "a":
-                    a_counter += 1
-        print(a_counter)
-    except FileNotFoundError:
-        print(0)
+        for word in range(len(readall)):
+            for char in readall[word]:
+                if char == "a":
+                    a_counter +=1
+        return a_counter
 
-letter_counter_from_file("tesst.txt")
+    except FileNotFoundError:
+        print("File not found!")
+
+print(letterA_counter_from_file("test.txt"))

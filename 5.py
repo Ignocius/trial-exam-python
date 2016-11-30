@@ -16,8 +16,8 @@ def pirate_sorter_woodenleg_gold(pirates_input):
         # print(i)
         if i['gold'] > 15 and i['has_wooden_leg'] == True:
             print(i['Name'])
-            return pirates_with_gold.append(i['Name'])
-
+            pirates_with_gold.append(i['Name'])
+    return pirates_with_gold
 
 piratess = [
   {'Name': 'Olaf', 'has_wooden_leg': False, 'gold': 12},
