@@ -26,9 +26,11 @@ The application is accepted if:
 
 ### Explain the algorithm used in exercise 2. Use a flowchart, structogram or pseudo code. [2p]
 #### Your answer:
+picture uploaded - flowchart
 
 ### How can you get a random number in python? [2p]
 #### Your answer:
+
 
 ### What does M stand for in MVC? [2p]
 #### Your answer:
